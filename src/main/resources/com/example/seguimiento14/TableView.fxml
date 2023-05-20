@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.seguimiento14.TableController">
+   <children>
+      <SplitPane dividerPositions="0.8366834170854272" layoutX="166.0" layoutY="76.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <TableView fx:id="DatosT" layoutX="22.0" layoutY="14.0" prefHeight="276.0" prefWidth="462.0">
+                    <columns>
+                      <TableColumn fx:id="ColumnaFecha" prefWidth="125.0" text="Date" />
+                      <TableColumn fx:id="ColumnaTipo" prefWidth="90.0" text="Type" />
+                        <TableColumn fx:id="ColumnaDescription" prefWidth="133.0" text="Description" />
+                        <TableColumn fx:id="ColumnaMonto" prefWidth="111.0" text="Amount" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Button fx:id="IngresosBtt" layoutX="255.0" layoutY="19.0" mnemonicParsing="false" text="View incomes" />
+                  <Button fx:id="GatosBtt" layoutX="366.0" layoutY="19.0" mnemonicParsing="false" text="View expenses" />
+                  <Button fx:id="ambosBtt" layoutX="480.0" layoutY="19.0" mnemonicParsing="false" text="Check both" />
+                  <Button fx:id="iniciobtt" layoutX="45.0" layoutY="15.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="113.0" text="Back to home" textAlignment="CENTER" textFill="#0a0000" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
